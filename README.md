@@ -1,5 +1,6 @@
 # Halmstad University LaTeX thesis template
 > **Note**
+>
 > This LaTeX template is not endorsed by Halmstad University in any way. The only purpoce of this LaTeX template is to facilitate thesis writing in LaTeX while still follow the offical template layout such as paragraph styles and headings format. 
 
 A LaTeX template that was created when writing [my own thesis](https://www.diva-portal.org/smash/record.jsf?pid=diva2:1675317). It is based on the [new template](https://www.hh.se/student-web/content-a-z/thesis-templates.html) from Halmstad University which only exists as a Word template.
