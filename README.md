@@ -23,7 +23,7 @@ The headers in the template use the Gill Sans Std font which does not exists in 
 ...or any other website that you feel comfortable with downloading from.
 
 ### 2. Import project into Overleaf
-Download the `.zip` file from this repository and goto *Your Projects* page on Overleaf. Press the *New Project* button and choose *Upload Project*. Select or drag the downloaded `.zip` file and it should start uploading. Once the upload has finished it should automatically open the project in Overleaf.
+Download the `.zip` file from [the releases (https://github.com/danielcrnic/halmstadUniversityLatexTemplate/releases)](https://github.com/danielcrnic/halmstadUniversityLatexTemplate/releases) and goto *Your Projects* page on Overleaf. Press the *New Project* button and choose *Upload Project*. Select or drag the downloaded `.zip` file and it should start uploading. Once the upload has finished it should automatically open the project in Overleaf.
 
 ### 3. Changing compiler
 When trying to compile the project it will fail since the default compiler on Overleaf is not compatible with the *fontspec* package which is needed for the use of custom font. 
