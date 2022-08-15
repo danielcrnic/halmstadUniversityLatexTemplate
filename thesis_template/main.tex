@@ -1,0 +1,155 @@
+\documentclass[12pt,a4paper]{book}
+\usepackage[top=2cm, bottom=3cm, left=4cm, right=4cm]{geometry}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{url}
+\usepackage{textcomp}
+\usepackage{parskip}
+\usepackage[english]{babel} % Change this to 'swedish' if the document is written in Swedish
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlepic}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[nottoc,numbib]{tocbibind}
+\usepackage{csquotes}
+\usepackage{titlesec}
+\usepackage{listings} 
+\usepackage{pdfpages}
+\usepackage[most]{tcolorbox}
+\usepackage{afterpage}
+\usepackage{fontspec}
+\usepackage{chngcntr}
+\usepackage{graphicx}
+\usepackage[newfloat]{minted}
+\usepackage{caption}
+\usepackage{lscape}
+\usepackage{floatrow}
+\usepackage{fancyhdr}
+
+\counterwithout{figure}{chapter}
+\counterwithout{listing}{chapter}
+\counterwithout{table}{chapter}
+
+\renewcommand{\baselinestretch}{1.15}
+
+\newfontfamily\secfont{[GillSansStd.otf]}
+
+\titleformat{\chapter}
+    {\fontsize{18pt}{22pt}\secfont\bfseries}
+    {\thechapter}
+    {1em}
+    {} 
+\titlespacing*{\chapter}
+    {0pt}
+    {0pt}
+    {0pt}
+
+\titleformat{\section}
+  {\fontsize{14pt}{17pt}\secfont\bfseries}
+  {\thesection} % Label
+  {1em} % Sep
+  {} % Title
+
+\titleformat{\subsection}
+    {\fontsize{12pt}{14pt}\secfont\bfseries}
+    {\thesubsection} % Label
+    {1em} % Sep
+    {} % Title
+  
+\titleformat{\subsubsection}
+    {\fontsize{12pt}{14pt}\secfont\bfseries}
+    {}
+    {1em}
+    {}
+  
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
+
+\floatsetup[table]{capposition=top}
+    
+\usepackage[style=vancouver]{biblatex}
+\addbibresource{references.bib}
+
+\fancyhf{}
+\renewcommand\headrulewidth{0pt}
+\fancyfoot[C]{\thepage}
+\pagestyle{fancy}
+
+\title{Half-time report}
+\author{Daniel Crnic \& Alfred Mattsson}
+\date{\today}
+
+\begin{document}
+
+\pagenumbering{gobble}
+\includepdf[pages=-]{front-cover.pdf}
+
+\chapter*{Sammanfattning}
+Sammanfattning på svenska.
+
+\\ 
+Nyckelord:
+
+\chapter*{Abstract}
+Abstract in English.
+
+\\ \\
+Keywords: 
+
+\chapter*{Acknowledgements}
+Acknowledgements here
+
+\selectlanguage{english}
+\addtocontents{toc}{\protect\thispagestyle{empty}}
+
+\tableofcontents
+
+\chapter{Introduction}
+\pagenumbering{arabic}
+\setcounter{page}{1}
+% Text here
+Example of a reference \cite{example}.
+
+\chapter{Background}
+% Text here
+
+\chapter{Method}
+% Text here
+
+\chapter{Results}
+% Text here
+
+\chapter{Discussion}
+% Text here
+
+\chapter{Conclusions}
+% Text here
+
+\printbibliography[heading=bibintoc,title={References}]
+
+\appendix
+\chapter*{Appendices}
+\addcontentsline{toc}{chapter}{Appendices}
+\renewcommand{\thesection}{\Alph{section}}
+
+\section{Example}
+\label{appendix:example}
+This is a example appendix.
+
+\newpage
+\
+\newpage
+\section{Another example}
+\label{appendix:another_example}
+This is a example appendix.
+
+\end{document}
